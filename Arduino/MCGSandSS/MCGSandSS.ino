@@ -11,6 +11,7 @@ u8 buf[30];
 float fromPM25[7];
 
 const int sensorIndPin = 11;
+const int controlPin = A3;
 
 SoftwareSerial mySerial(4, 3);
 
@@ -110,7 +111,10 @@ sensorData getValuesFromSensors(){
 }
 
 void setup(){
-
+  
+  pinMode(controlPin, OUTPUT);
+  digitalWrite(controlPin, HIGH);
+  
   pinMode(sensorIndPin, OUTPUT);
   digitalWrite(sensorIndPin, LOW);
 
@@ -208,6 +212,6 @@ void loop(){
   Serial.println("---------------");
   Serial.println();
   
-  delay(5000);
+  delay(20000);
     
 }
