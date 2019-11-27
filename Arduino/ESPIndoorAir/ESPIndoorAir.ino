@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>        // Include the Wi-Fi library
 #include <ESP8266HTTPClient.h>
 
-const char* ssid     = "wiFi";         // The SSID (name) of the Wi-Fi network you want to connect to
-const char* password = "sudoanaconda";     // The password of the Wi-Fi network
+const char* ssid     = "NIAQ";         // The SSID (name) of the Wi-Fi network you want to connect to
+const char* password = "indoorairquality";     // The password of the Wi-Fi network
 
 #define URX D1
 #define UTX D2
@@ -101,7 +101,6 @@ void loop() {
       Serial.println("-------------------------------");
       sendValues();
      }
-     Serial.println("I am working");
 }
 
 
