@@ -113,7 +113,7 @@ sensorData getValuesFromSensors(){
 void setup(){
   
   pinMode(controlPin, OUTPUT);
-  digitalWrite(controlPin, LOW);
+  digitalWrite(controlPin, HIGH);
   
   pinMode(sensorIndPin, OUTPUT);
   digitalWrite(sensorIndPin, LOW);
