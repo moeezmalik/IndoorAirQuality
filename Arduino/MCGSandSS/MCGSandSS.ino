@@ -113,7 +113,7 @@ sensorData getValuesFromSensors(){
 void setup(){
   
   pinMode(controlPin, OUTPUT);
-  digitalWrite(controlPin, HIGH);
+  digitalWrite(controlPin, LOW);
   
   pinMode(sensorIndPin, OUTPUT);
   digitalWrite(sensorIndPin, LOW);
@@ -212,6 +212,6 @@ void loop(){
   Serial.println("---------------");
   Serial.println();
   
-  delay(20000);
+  delay(60000);
     
 }

@@ -5,8 +5,11 @@
 const char* ssid     = "wiFi";         // The SSID (name) of the Wi-Fi network you want to connect to
 const char* password = "sudoanaconda";     // The password of the Wi-Fi network
 
+#define URX D1
+#define UTX D2
 
-SoftwareSerial UART(D1, D2);
+
+SoftwareSerial UART(URX, UTX);
 
 struct Sensor_data{
   float nh3 = 0.0;
